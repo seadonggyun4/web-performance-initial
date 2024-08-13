@@ -178,10 +178,13 @@ section.country-bar {
     flex-direction: column;
     height: 60px;
     background-color: #f2f2f2;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    will-change: opacity;
 }
 
 section.country-bar.hidden {
-    display: none;
+    opacity: 0;
 }
 
 section.best-sellers {
@@ -394,9 +397,8 @@ section.newsletter form button {
 
 section.newsletter form button:hover {
     color: #614dc9;
-    border: 1px solid #614dc9;
-    background-color: #FFF;
     border: 1px solid #3E3E3E;
+    background-color: #FFF;
 }
 
 

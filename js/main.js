@@ -1,18 +1,10 @@
-function showTopBar(){
-    let country = "France";
-    let vat = 20;
+(function showTopBar() {
+    const $countryBar = document.querySelector("section.country-bar")
+    const COUNTRY = "France";
+    const VAT = 20;
+
     setTimeout(() => {
-        document.querySelector("section.country-bar")
-        .innerHTML = `<p>Orders to <b>${country}</b> are subject to <b>${vat}%</b> VAT</p>`
-        document.querySelector("section.country-bar")
-        .classList.remove('hidden')
+        $countryBar.innerHTML = `<p>Orders to <b>${COUNTRY}</b> are subject to <b>${VAT}%</b> VAT</p>`
+        $countryBar.classList.remove('hidden')
     }, 1000);
-}
-
-
-
-showTopBar();
-
-
-
-
+})();
