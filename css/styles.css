@@ -102,6 +102,7 @@ section.hero img {
     height: auto;
     filter: brightness(50%);
     display: none;
+    object-fit: cover;
 }
 
 section.hero img.desktop {
@@ -237,6 +238,8 @@ section.best-sellers .product-slider .product {
 
 section.best-sellers .product-slider .product img {
     max-width: 40%;
+    height: auto;
+    object-fit: cover;
 }
 
 section.best-sellers .product-slider .product .product-picture {
