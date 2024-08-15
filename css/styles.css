@@ -98,6 +98,21 @@ section.hero {
     min-height: 400px;
 }
 
+section.hero .img-Loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #DDDDDD;
+    transition: opacity .3s ease-in-out;
+    z-index: 1;
+}
+
+section.hero .img-Loading.hidden{
+    opacity: 0;
+}
+
 section.hero img {
     width: 100%;
     height: auto;

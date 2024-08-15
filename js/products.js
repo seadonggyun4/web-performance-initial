@@ -30,13 +30,6 @@ const bestData = [
 
 window.addEventListener('load', async () => {
     await loadProducts();
-    window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop > 1) {
-            for (let i = 0; i < 10000000; i++) {
-                const temp = Math.sqrt(i) * Math.sqrt(i);
-            }
-        }
-    });
 })
 
 const loadProducts = async () => {
