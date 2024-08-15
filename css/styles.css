@@ -95,12 +95,12 @@ header nav ul li:last-of-type a {
 section.hero {
     position: relative;
     overflow: hidden;
+    min-height: 400px;
 }
 
 section.hero img {
     width: 100%;
     height: auto;
-    min-height: 864px;
     filter: brightness(50%);
     object-fit: cover;
 }
