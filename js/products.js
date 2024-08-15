@@ -8,7 +8,7 @@ const bestData = [
         "title": "Apple Headset",
         "price": 450.00,
         "category": "Headsets, Apple",
-        "image": "images/vr1.jpg",
+        "image": "images/vr1.webp",
     },
     {
         "id": 2,
@@ -16,7 +16,7 @@ const bestData = [
         "title": "Playstation Headset",
         "price": 399.99,
         "category": "Headsets, PS",
-        "image": "images/vr2.jpg",
+        "image": "images/vr2.webp",
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@ const bestData = [
         "price": 419.99,
         "discountedPrice": 349.99,
         "category": "Headsets, Oculus",
-        "image": "images/vr3.jpg",
+        "image": "images/vr3.webp",
     }
 ]
 
