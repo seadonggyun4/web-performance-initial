@@ -28,23 +28,31 @@ const bestData = [
     }
 ]
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    (async function loadProducts() {
-        const response = await fetch("https://fakestoreapi.com/products");
-        const products = await response.json();
-        displayProducts(products, $allContainer);
-        displayProducts(bestData, $bestContainer);
-    })()
-});
+window.addEventListener('load', async () => {
+    await loadProducts();
+    window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop > 1) {
+            for (let i = 0; i < 10000000; i++) {
+                const temp = Math.sqrt(i) * Math.sqrt(i);
+            }
+        }
+    });
+})
 
+const loadProducts = async () => {
+    const response = await fetch("https://fakestoreapi.com/products");
+    const products = await response.json();
+    displayProducts(products, $allContainer);
+    displayProducts(bestData, $bestContainer);
+}
 
-
-function displayProducts(products, container) {
+const displayProducts = (products, container) => {
+    container.replaceChildren()
     products.forEach(product => {
         const productElement = `
         <div class="product ${product?.type === 'new' && 'new'}">
             <div class="product-picture">
-                <img src="${product.image}" alt="product: ${product.title}" width="250" loading="lazy"/>
+                <img src="${product.image}" alt="product: ${product.title}" width="250" height="250" loading="lazy"/>
             </div>
             <div class="product-info">
                 <h5 class="categories">${product.category}</h5>
@@ -66,11 +74,5 @@ function displayProducts(products, container) {
 
         container.insertAdjacentHTML('beforeend', productElement);
     });
-}
-
-
-// Simulate heavy operation. It could be a complex price calculation.
-for (let i = 0; i < 10000000; i++) {
-    const temp = Math.sqrt(i) * Math.sqrt(i);
 }
 

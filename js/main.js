@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('load', async () => {
     (function showTopBar() {
         const $countryBar = document.querySelector("section.country-bar")
         const COUNTRY = "France";
@@ -9,4 +9,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
             $countryBar.classList.remove('hidden')
         }, 1000);
     })();
-});
+})

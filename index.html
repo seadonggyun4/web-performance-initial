@@ -48,18 +48,32 @@
                         <li><a href="about.html">About us</a></li>
                         <li><a href="index.html#best-sellers-section">Best Sellers</a></li>
                         <li><a href="index.html#newsletter-section">Newsletter</a></li>
-                        <li class="menu-icon"><img src="images/menu_icon.png" ></li>
+                        <li class="menu-icon">
+                            <img src="images/menu_icon.png" width="29" height="20" alt="menu_icon" aria-hidden="true">
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
         
         <section class="hero">
-
-            <img class="desktop" src="images/Hero_Desktop.jpg" width="2160" height="1005" alt="Hero_Desktop" loading="lazy">
-            <img class="mobile" src="images/Hero_Mobile.jpg" width="864" height="864" alt="Hero_Mobile" loading="lazy">
-            <img class="tablet" src="images/Hero_Tablet.jpg" width="1440" height="1155" alt="Hero_Tablet" loading="lazy">
-
+            <img
+                srcset="
+                    images/Hero_Mobile.webp 864w,
+                    images/Hero_Tablet.webp 1440w,
+                    images/Hero_Desktop.webp 2160w
+                "
+                sizes="
+                    (max-width: 576px) 100vw,
+                    (max-width: 960px) 100vw,
+                    100vw
+                "
+                width="2160"
+                height="1005"
+                src="images/Hero_Desktop.webp"
+                alt="Hero_banner"
+                loading="eager"
+            >
            
             <div class="hero-content">
                 <div class="container">
@@ -81,6 +95,9 @@
             <hr>
             <div class="product-slider">
                 <div class="container">
+                    <div class="skeleton"></div>
+                    <div class="skeleton"></div>
+                    <div class="skeleton"></div>
                     <!--products-->
                 </div>
             </div>
@@ -91,6 +108,9 @@
             <hr>
             <div class="product-slider" id="all-products">
                 <div class="container">
+                    <div class="skeleton"></div>
+                    <div class="skeleton"></div>
+                    <div class="skeleton"></div>
                     <!--products-->
                 </div>
             </div>
