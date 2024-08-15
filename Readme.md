@@ -18,8 +18,10 @@
 ## 개선 후 향상된 지표
 
 ### BEFORE
+<img width="1705" alt="스크린샷 2024-08-16 오전 3 07 51" src="https://github.com/user-attachments/assets/27eebd76-faeb-47c2-b2ab-5f5982541b4c">
 
 ### AFTER
+<img width="1708" alt="스크린샷 2024-08-16 오전 3 09 05" src="https://github.com/user-attachments/assets/36aa150b-b6f7-488b-915f-eaccd25b2385">
 
 
 ## 기타 사항
